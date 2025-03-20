@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aynurak Tech Sols</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive; /* Changed to Comic Sans MS */
+            font-style: italic; /* Keeps it italicized */
+        }
+        .header {
+            background-color: red; /* Simple color */
+            padding: 20px;
+            font-size: 2rem; /* Big text */
+        }
+        .menu {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            font-size: 1rem;
+            cursor: pointer; /* Shows it’s clickable */
+        }
+        .content {
+            display: none; /* Hidden by default */
+            padding: 10px;
+            background-color: gray;
+        }
+        .content.show {
+            display: block; /* Shows when clicked */
+        }
+        .service {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid red; /* Simple border */
+        }
+    </style>
+    <script>
+        function showServices() {
+            var content = document.getElementById('content');
+            content.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <div class="header">Aynurak Tech Sols</div>
+    <div class="menu" onclick="showServices()">Menu</div>
+    <div id="content" class="content">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Website Development</h3>
+            <p>We make websites.</p>
+            <p>Price: RS 25000</p>
+        </div>
+        <div class="service">
+            <h3>Cybertechnology</h3>
+            <p>We keep your data safe.</p>
+            <p>Price: Rs 45000</p>
+        </div>
+        <div class="service">
+            <h3>Humanoid Robots</h3>
+            <p>We build robots.</p>
+            <p>Price: Ask us</p>
+        </div>
+        <h3>Contact Us</h3>
+        <p>Email: contact@aynuraktech.com</p>
+        <p>Phone: +91 9856784321</p>
+    </div>
+</body>
+</html>
